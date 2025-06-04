@@ -49,3 +49,46 @@ A full-stack web application to manage Electric Vehicle (EV) charging stations. 
 ## 📁 Project Structure
 
 ### Frontend (`/frontend`)
+
+/src
+├── components/ # Reusable components (ChargerList, MapView)
+├── pages/ # Route pages (Login, Signup, Dashboard)
+├── context/ # AuthContext for global user state
+├── utils/ # Base URLs, helpers
+
+
+
+### Backend (`/backend`)
+
+/routes # Auth and Charger station routes
+/controllers # Logic for login, CRUD, user info
+/models # Mongoose schemas
+/middleware # Protect routes with JWT
+
+
+🧪 Setup Instructions
+1. Clone the repo
+git clone https://github.com/your-username/charging-station-app.git
+cd charging-station-app
+
+2. Setup Backend
+cd backend
+npm install
+npm start
+
+3. Setup Frontend
+cd frontend
+npm install
+npm run dev
+
+🛡️ Security
+JWT stored in httpOnly cookies for secure auth.
+
+CORS configured for Vercel and Render.
+
+Secure cookie setup: secure: true, sameSite: 'None'.
+
+📌 Notes
+The backend uses cookie-based auth; ensure HTTPS is used in production (e.g., on Vercel + Render).
+
+Frontend automatically invalidates and refetches user state on login/logout using React Query.
