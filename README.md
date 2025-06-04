@@ -51,19 +51,19 @@ A full-stack web application to manage Electric Vehicle (EV) charging stations. 
 ### Frontend (`/frontend`)
 
 /src
-├── components/ # Reusable components (ChargerList, MapView)
-├── pages/ # Route pages (Login, Signup, Dashboard)
-├── context/ # AuthContext for global user state
-├── utils/ # Base URLs, helpers
+- ├── components/ # Reusable components (ChargerList, MapView)
+- ├── pages/ # Route pages (Login, Signup, Dashboard)
+- ├── context/ # AuthContext for global user state
+- ├── utils/ # Base URLs, helpers
 
 
 
 ### Backend (`/backend`)
 
-/routes # Auth and Charger station routes
-/controllers # Logic for login, CRUD, user info
-/models # Mongoose schemas
-/middleware # Protect routes with JWT
+- /routes # Auth and Charger station routes
+- /controllers # Logic for login, CRUD, user info
+- /models # Mongoose schemas
+- /middleware # Protect routes with JWT
 
 
 ## 🧪 Setup Instructions
@@ -74,15 +74,16 @@ A full-stack web application to manage Electric Vehicle (EV) charging stations. 
 git clone https://github.com/your-username/charging-station-app.git
 cd charging-station-app
 
-### 2. Setup Backend
-cd backend
-npm install
-npm start
+Setup Backend
+    cd backend
+    npm install
+    npm start
 
-3. Setup Frontend
-cd frontend
-npm install
-npm run dev
+Setup Frontend
+    cd frontend
+    npm install
+    npm run dev
+
 
 🛡️ Security
 JWT stored in httpOnly cookies for secure auth.
