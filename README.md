@@ -66,12 +66,15 @@ A full-stack web application to manage Electric Vehicle (EV) charging stations. 
 /middleware # Protect routes with JWT
 
 
-🧪 Setup Instructions
-1. Clone the repo
+## 🧪 Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/your-username/charging-station-app.git
 cd charging-station-app
 
-2. Setup Backend
+### 2. Setup Backend
 cd backend
 npm install
 npm start
